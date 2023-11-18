@@ -36,8 +36,7 @@ class CategorieController extends AbstractController
     #[Route('/api/{categorie}/ressource', name: 'app_api_categorie_ressource', methods: 'GET')]
     public function getRessourcesByCategorie($categorie): Response
     {
-        $ressources = $this->ressourceRepository->find($this->categorieRepository->findOneBy(['intitule' => $categorie]));
-
+        $ressources = $this->ressourceRepository->findOneBy($this->categorieRepository->findBy(['intitule' => $categorie]));
         $themeJson = $this->Serializer->serialize($ressources,"json", ["groups" => "res"]);
         $response = New Response();
         $response->setStatusCode(Response::HTTP_OK);
