@@ -18,7 +18,7 @@ class User
     #[ORM\Column(length: 255)]
     private ?string $pseudo = null;
 
-    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Action::class)]
+    #[ORM\OneToMany(mappedBy: 'User', targetEntity: Action::class)]
     private Collection $actions;
 
     public function __construct()
