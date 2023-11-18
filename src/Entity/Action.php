@@ -23,7 +23,7 @@ class Action
     private ?ressource $ressource = null;
 
     #[ORM\ManyToOne(inversedBy: 'actions')]
-    private ?user $user = null;
+    private ?User $user = null;
 
     public function getId(): ?int
     {
@@ -68,12 +68,12 @@ class Action
 
     public function getUser(): ?User
     {
-        return $this->user;
+        return $this->User;
     }
 
     public function setUser(?User $user): static
     {
-        $this->user = $user;
+        $this->User = $user;
 
         return $this;
     }

@@ -20,9 +20,10 @@ class CategorieController extends AbstractController
     #[Route('/api/categories', name: 'app_api_categories', methods: 'GET')]
     public function getAllCategories(): Response
     {
-         $categories = $this->categorieRepository->findAll();
-        $themeJson = $this->Serializer->serialize($categories,"json",["groups"=>["theme"]]);
-        $response = new Response();
+        $categories = $this->categorieRepository->findAll();
+
+        $themeJson = $this->Serializer->serialize($categories,"json", ["groups" => "cat"]);
+        dd($themeJson);
         $response->setStatusCode(Response::HTTP_OK);
         $response->headers->set("content-type","application/json");
         $response->setContent($themeJson);

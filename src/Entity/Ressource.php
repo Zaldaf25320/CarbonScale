@@ -33,7 +33,7 @@ class Ressource
 
     public function __construct()
     {
-        $this->user = new ArrayCollection();
+        $this->User = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -109,7 +109,7 @@ class Ressource
 
     public function removeUser(Action $action): static
     {
-        if ($this->user->removeElement($action)) {
+        if ($this->User->removeElement($action)) {
             // set the owning side to null (unless already changed)
             if ($action->getRessource() === $this) {
                 $action->setRessource(null);
