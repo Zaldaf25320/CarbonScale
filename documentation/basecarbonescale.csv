@@ -1,74 +1,74 @@
 Type;nom;conso en Kg CO2e;type de calcule
-Transport;Vélo ou marche;0;Km
-Transport;TGV;0,002;Km
-Transport;Tramway;0,003;Km
-Transport;Métro;0,003;Km
-Transport;Intercités;0,006;Km
-Transport;RER ou Transilien;0,007;Km
-Transport;Vélo ou trot electrique;0,01;Km
-Transport;Bus a moteur ‚lectrique;0,02;Km
-Transport;Autocar;0,03;Km
-Transport;TER;0,03;Km
-Transport;Scooter ou moto lègère;0,08;Km
-Transport;voiture electrique;0,1;Km
-Transport;Bus a moteur thermique;0,11;Km
-Transport;Bus gnv;0,12;Km
-Transport;moto;0,19;Km
-Transport;voiture thermique;0,22;Km
-Transport;Avion;0,23;Km
-Repas;repas végétalien;0,39;Unit
-Repas;repas végétarien;0,51;Unit
-Repas;repas avec poisson gras;1,11;Unit
-Repas;repas avec du poulet;1,58;Unit
-Repas;repas avec poisson blanc;1,98;Unit
-Repas;repas avec boeuf;7,26;Unit
-Textile;T-shirt en polyester;5,21;Unit
-Textile;T-shirt en coton;5,16;Unit
-Textile;Polo;8,24;Unit
-Textile;Chemise en viscose;10,19;Unit
-Textile;pull en coton recyclé;8,13;Unit
-Textile;Chemise en coton;11,28;Unit
-Textile;Paire de chaussures en cuir;13,36;Unit
-Textile;Paire de chaussures en tissu;17,29;Unit
-Textile;Paire de chaussures de sport;18,67;Unit
-Textile;Jean;22,68;Unit
-Textile;Veste simili-cuir;23,89;Unit
-Textile;pull en acrylique;25,62;Unit
-Textile;sweat en coton;27,41;Unit
-Textile;veste imperm‚able;38,66;Unit
-Textile;Robe en viscose;44,97;Unit
-Textile;robe en coton;48,65;Unit
-Textile;pull en laine;52,95;Unit
-Textile;robe en polysester;50,98;Unit
-Textile;manteau;85,72;Unit
-electronique;enceinte bluetooth;8,27552;Unit
-electronique;montre connecter;9,5008;Unit
-electronique;appareil photo compact;24,2104;Unit
-electronique;appareil photo reflex;30,0612;Unit
-electronique;Smartphone;30,52657;Unit
-electronique;console portable;30,82646;Unit
-electronique;liseuse ;38,263;Unit
-electronique;tablette mini;31,13;Unit
-electronique;cadre photo digital;40,19262;Unit
-electronique;barre de son;50,19;Unit
-electronique;Tablette classique;44,52;Unit
-electronique;Tablette détachable;82,25;Unit
-electronique;imprimante jet d'encre;72,1;Unit
-electronique;console de salon;73,71;Unit
-electronique;chaine hifi;123,31;Unit
-electronique;modem fibre;81,59;Unit
-electronique;ordinateur portable;134,7;Unit
-electronique;home cinema;132,59;Unit
-electronique;Ordinateur fixe bureautique;416,92;Unit
-electronique;Tv ;349,87;Unit
-electronique;Ordinateur fixe performance;543,36;Unit
-electroménager;Bouilloire;9,74;Unit
-electroménager;aspirateur;47,3;Unit
-electroménager;cafetiere filtre;31,52;Unit
-electroménager;cafetiere expresso;47,14;Unit
-electroménager;cafetiere a dosettes;22,01;Unit
-electroménager;four electrique;137,4;Unit
-electroménager;Refrigirateur;254,17;Unit
-electroménager;climatiseur;238,19;Unit
-electroménager;lave-vaisselle;243,9;Unit
-electroménager;lave linge;295,69;Unit
+Transport;Velo ou marche;0;Km
+Transport;TGV;0.002;Km
+Transport;Tramway;0.003;Km
+Transport;Metro;0.003;Km
+Transport;Intercites;0.006;Km
+Transport;RER ou Transilien;0.007;Km
+Transport;Velo ou trot electrique;0.01;Km
+Transport;Bus a moteur electrique;0.02;Km
+Transport;Autocar;0.03;Km
+Transport;TER;0.03;Km
+Transport;Scooter ou moto legere;0.08;Km
+Transport;voiture electrique;0.1;Km
+Transport;Bus a moteur thermique;0.11;Km
+Transport;Bus gnv;0.12;Km
+Transport;moto;0.19;Km
+Transport;voiture thermique;0.22;Km
+Transport;Avion;0.23;Km
+Repas;repas vegetalien;0.39;Unit
+Repas;repas vegetarien;0.51;Unit
+Repas;repas avec poisson gras;1.11;Unit
+Repas;repas avec du poulet;1.58;Unit
+Repas;repas avec poisson blanc;1.98;Unit
+Repas;repas avec boeuf;7.26;Unit
+Textile;T-shirt en polyester;5.21;Unit
+Textile;T-shirt en coton;5.16;Unit
+Textile;Polo;8.24;Unit
+Textile;Chemise en viscose;10.19;Unit
+Textile;pull en coton recycle;8.13;Unit
+Textile;Chemise en coton;11.28;Unit
+Textile;Paire de chaussures en cuir;13.36;Unit
+Textile;Paire de chaussures en tissu;17.29;Unit
+Textile;Paire de chaussures de sport;18.67;Unit
+Textile;Jean;22.68;Unit
+Textile;Veste simili-cuir;23.89;Unit
+Textile;pull en acrylique;25.62;Unit
+Textile;sweat en coton;27.41;Unit
+Textile;veste impermeable;38.66;Unit
+Textile;Robe en viscose;44.97;Unit
+Textile;robe en coton;48.65;Unit
+Textile;pull en laine;52.95;Unit
+Textile;robe en polysester;50.98;Unit
+Textile;manteau;85.72;Unit
+electronique;enceinte bluetooth;8.27552;Unit
+electronique;montre connecter;9.5008;Unit
+electronique;appareil photo compact;24.2104;Unit
+electronique;appareil photo reflex;30.0612;Unit
+electronique;Smartphone;30.52657;Unit
+electronique;console portable;30.82646;Unit
+electronique;liseuse ;38.263;Unit
+electronique;tablette mini;31.13;Unit
+electronique;cadre photo digital;40.19262;Unit
+electronique;barre de son;50.19;Unit
+electronique;Tablette classique;44.52;Unit
+electronique;Tablette detachable;82.25;Unit
+electronique;imprimante jet d'encre;72.1;Unit
+electronique;console de salon;73.71;Unit
+electronique;chaine hifi;123.31;Unit
+electronique;modem fibre;81.59;Unit
+electronique;ordinateur portable;134.7;Unit
+electronique;home cinema;132.59;Unit
+electronique;Ordinateur fixe bureautique;416.92;Unit
+electronique;Tv ;349.87;Unit
+electronique;Ordinateur fixe performance;543.36;Unit
+electromenager;Bouilloire;9.74;Unit
+electromenager;aspirateur;47.3;Unit
+electromenager;cafetiere filtre;31.52;Unit
+electromenager;cafetiere expresso;47.14;Unit
+electromenager;cafetiere a dosettes;22.01;Unit
+electromenager;four electrique;137.4;Unit
+electromenager;Refrigirateur;254.17;Unit
+electromenager;climatiseur;238.19;Unit
+electromenager;lave-vaisselle;243.9;Unit
+electromenager;lave linge;295.69;Unit
