@@ -17,7 +17,7 @@ class Ressource
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups("res")]
+    #[Groups("res","getAction")]
     private ?string $Intitule = null;
 
     #[ORM\Column(length: 255)]

@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Action;
 use App\Repository\ActionRepository;
 use App\Repository\CategorieRepository;
 use App\Repository\RessourceRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Query\ResultSetMappingBuilder;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,13 +19,15 @@ class CategorieController extends AbstractController
     private CategorieRepository $categorieRepository;
     private RessourceRepository $ressourceRepository;
     private ActionRepository $actionRepository;
+    private EntityManager $entityManager;
 
-    public function __construct(CategorieRepository $categorieRepository, SerializerInterface $Serializer,RessourceRepository $ressourceRepository,ActionRepository $actionRepository)
+    public function __construct(CategorieRepository $categorieRepository, SerializerInterface $Serializer,RessourceRepository $ressourceRepository,ActionRepository $actionRepository,EntityManager $entityManager)
     {
         $this->categorieRepository = $categorieRepository;
         $this->Serializer = $Serializer;
         $this->ressourceRepository = $ressourceRepository;
         $this->actionRepository = $actionRepository;
+        $this->entityManager = $entityManager;
     }
     #[Route('/api/categories', name: 'app_api_categories', methods: 'GET')]
     public function getAllCategories(): Response
@@ -48,6 +53,31 @@ class CategorieController extends AbstractController
         $response->headers->set("content-type","application/json");
         $response->setContent($themeJson);
         return $response;
+    }
+
+    #[Route('api/action/last', name: 'app_action_last', methods: ['GET'])]
+    public function getActionNumber(): Response
+    {
+
+        // create the SQL statement
+        $sql = 'SELECT a.id, r.intitule 
+        FROM action a 
+        JOIN ressource r ON a.id = r.id 
+        ORDER BY a.id DESC 
+        LIMIT 4';
+        // create the result set mapping
+        $rsm = new ResultSetMappingBuilder($this->entityManager);
+        $rsm->addRootEntityFromClassMetadata(Action::class, 'a');
+
+        // create the native query
+        $query = $this->entityManager->createNativeQuery($sql, $rsm);
+
+        // get the results
+        $actions = $query->getResult();
+
+        $ActionJson = $this->Serializer->serialize($actions, 'json' ,['groups'=>'getAction']);
+
+        return new Response($ActionJson , Response::HTTP_OK, ['content-type' => 'application/json']);
     }
 
     #[Route('/api/action', name: 'app_api_post_action', methods: ['POST'])]
