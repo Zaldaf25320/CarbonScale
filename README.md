@@ -13,3 +13,11 @@ Permet de récuperer toutes les catégorie mise dans la base de donnée
 
 #API/{Nom de la categorie}/Ressource
 Permet de récuperer toutes les ressources, lié a la catégorie spécifiée dans {Nom de la categorie}
+
+#API/Action/Last
+Récupère les 4 denière action de l'utilisateur
+
+#API/Action 
+Permet d'ajouter une action, lié a un utilisateur. 
+
+A mon avis, il est préférable de re créer une api a zero, pour mettre les vraie donnée. utilise cette API comme un exemple, plutot que de l'utiliser :) 
